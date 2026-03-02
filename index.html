@@ -3,115 +3,439 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name | ML Engineer Portfolio</title>
-  <meta name="description" content="Portfolio of Your Name - ML, RL, time-series forecasting, and control systems projects." />
+  <title>Ali Yavari | AI Systems &amp; ML Engineer</title>
+  <meta name="description" content="Ali Yavari — AI systems researcher and ML engineer specializing in reinforcement learning, time-series forecasting, and scalable ML architectures." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
   <header class="navbar">
     <div class="container nav-content">
-      <a class="logo" href="#home">Your Name</a>
-      <nav>
+      <a class="logo" href="#home">AY</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="nav-menu">
         <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#research">Research</a>
         <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#skills">Skills</a>
+        <a href="#honors">Honors</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main id="home">
+
+    <!-- Hero -->
     <section class="hero container">
       <div class="hero-text">
-        <p class="eyebrow">Machine Learning • Reinforcement Learning • Control</p>
-        <h1>Hi, I'm Your Name</h1>
+        <p class="eyebrow">Reinforcement Learning · Forecasting · Robotics and Control</p>
+        <h1>Hi, I'm <span class="accent">Ali Yavari</span></h1>
         <p class="lead">
-          I build reliable ML and RL systems for forecasting, decision-making, and industrial control applications.
+          AI systems researcher building scalable ML and RL pipelines for forecasting,
+          decision-making, and industrial control — from multi-GPU clusters to production.
         </p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#projects">View Projects</a>
-          <a class="btn" href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
+          <a class="btn" href="assets/resume.pdf" target="_blank" rel="noopener">Resume ↗</a>
+          <a class="btn" href="#contact">Get in Touch</a>
         </div>
       </div>
       <div class="hero-image">
-        <img src="assets/profile.jpg" alt="Portrait of Your Name" />
+        <img src="assets/profile.jpg" alt="Portrait of Ali Yavari" />
       </div>
     </section>
 
+    <!-- About -->
     <section id="about" class="section container">
       <h2>About</h2>
-      <p>
-        I'm a graduate researcher / ML engineer focused on reinforcement learning, time-series forecasting,
-        and robust control. I enjoy building models that move from research to practical systems.
-      </p>
-    </section>
-
-    <section id="projects" class="section container">
-      <h2>Featured Projects</h2>
-      <div class="grid cards">
-        <article class="card">
-          <h3>Project 1 Title</h3>
-          <p>1–2 lines: problem, approach, and outcome.</p>
-          <p class="stack">Python • PyTorch • RL • Forecasting</p>
-          <div class="links">
-            <a href="#">GitHub</a>
-            <a href="#">Demo/Report</a>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm an AI systems researcher with an M.Sc. in Electrical &amp; Computer Engineering
+            from the <strong>University of Alberta</strong> (4.0 GPA), where I focused on
+            reinforcement learning, time-series prediction, and large-model optimization.
+          </p>
+          <p>
+            I design scalable ML architectures across multi-GPU clusters, integrating
+            model-level and system-level improvements for performance and efficiency.
+            My toolbox spans PyTorch, MLflow, Docker, and cloud platforms — and I'm
+            passionate about advancing AI computing architectures, multimodal optimization,
+            and safe reinforcement learning.
+          </p>
+        </div>
+        <div class="education">
+          <h3>Education</h3>
+          <div class="edu-item">
+            <strong>M.Sc. Electrical &amp; Computer Engineering</strong>
+            <span class="muted">University of Alberta · 2023 – 2026</span>
+            <span class="tag-inline">GPA 4.0 / 4.0</span>
           </div>
-        </article>
-
-        <article class="card">
-          <h3>Project 2 Title</h3>
-          <p>1–2 lines: problem, approach, and outcome.</p>
-          <p class="stack">Control • Simulation • Optimization</p>
-          <div class="links">
-            <a href="#">GitHub</a>
-            <a href="#">Demo/Report</a>
+          <div class="edu-item">
+            <strong>B.Sc. Mechanical Engineering</strong>
+            <span class="muted">Sharif University of Technology · 2018 – 2023</span>
+            <span class="tag-inline">GPA 18.13 / 20</span>
           </div>
-        </article>
-
-        <article class="card">
-          <h3>Project 3 Title</h3>
-          <p>1–2 lines: problem, approach, and outcome.</p>
-          <p class="stack">MLOps • Deployment • APIs</p>
-          <div class="links">
-            <a href="#">GitHub</a>
-            <a href="#">Demo/Report</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="research" class="section container">
-      <h2>Research & Publications</h2>
-      <ul class="list">
-        <li><strong>Paper/Preprint Title</strong> — short note + link</li>
-        <li><strong>Conference/Poster Title</strong> — short note + link</li>
-      </ul>
-    </section>
-
-    <section id="experience" class="section container">
-      <h2>Experience</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <h3>Role Title — Company/Lab</h3>
-          <p class="muted">2025–Present</p>
-          <p>Focus, impact, and measurable results.</p>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section container">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
-      <p>LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></p>
-      <p>GitHub: <a href="#">github.com/yourusername</a></p>
+    <!-- Experience -->
+    <section id="experience" class="section container">
+      <h2>Experience</h2>
+      <div class="timeline">
+
+        <div id="exp-amii" class="timeline-item">
+          <div class="timeline-header">
+            <h3>Machine Learning Resident</h3>
+            <span class="muted">Aug 2025 – Feb 2026</span>
+          </div>
+          <p class="subtitle">Alberta Machine Intelligence Institute (Amii) · In collaboration with Repsol (Spain)</p>
+          <ul>
+            <li>Trained large-scale time series  forecasting models for two years of datausing xLSTMs and Transformers to capture long-range dependencies for data-driven simulation.</li>
+            <li>Engineered an MVP for long-horizon forecasting and process-control simulation (Robust results over the domain with MAPE less than 2 percent).</li>
+            <li>Optimized data ingestion, model parallelism, and checkpointing strategies to enhance training throughput and scalability.</li>
+            <li>Collaborated with domain experts to balance predictive accuracy and computational efficiency.</li>
+          </ul>
+        </div>
+
+        <div id="exp-ualberta" class="timeline-item">
+          <div class="timeline-header">
+            <h3>Graduate Research Assistant</h3>
+            <span class="muted">Jan 2024 – Jan 2026</span>
+          </div>
+          <p class="subtitle">Applied Control &amp; Diagnosis Lab, University of Alberta</p>
+          <ul>
+            <li>Applied Safe RL in POMDPs to learn robust control policies with constraint satisfaction and performance guarantees.</li>
+            <li>Developed optimal filters via RL and Bayesian Optimization, improving state estimation.</li>
+            <li>Built evaluation protocols to analyze policy stability, constraint violations, and performance trade-offs.</li>
+          </ul>
+        </div>
+
+        <div id="exp-epfl" class="timeline-item">
+          <div class="timeline-header">
+            <h3>Research Intern</h3>
+            <span class="muted">Jun 2023 – Sep 2023</span>
+          </div>
+          <p class="subtitle">EPFL Excellence in Engineering Program · In collaboration with Hexagon AB — Lausanne, Switzerland</p>
+          <ul>
+            <li>Developed real-time error compensation software using neural network-based kinematic error modeling for robotic metrology (Reduced the kinematic error by more than half).</li>
+            <li>Conducted data-driven experiments to reduce cogging torque in PMSMs through optimized motor control.</li>
+            <li>Integrated low-level system optimization with model-level intelligence for faster, more stable control.</li>
+          </ul>
+        </div>
+
+        <div id="exp-sharif" class="timeline-item">
+          <div class="timeline-header">
+            <h3>Project Student — Condition Monitoring Lab</h3>
+            <span class="muted">Jan 2022 – Jan 2023</span>
+          </div>
+          <p class="subtitle">Sharif University of Technology — Tehran, Iran</p>
+          <ul>
+            <li>Developed predictive maintenance models using deep learning for vibration-based fault detection and RUL estimation.</li>
+            <li>Engineered hybrid datasets and improved model generalization through data augmentation and precision tuning.</li>
+            <li></li>
+          </ul>
+        </div>
+
+      </div>
     </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section container">
+      <h2>Featured Projects</h2>
+      <div class="grid cards">
+
+       
+
+        <article class="card">
+          <div class="card-thumb">
+            <img src="assets/project-thumbnails/timeSeries.png" alt="Time series forecasting visualization" />
+          </div>
+          <div class="card-body">
+            <h3>Large-Model Industrial Forecasting</h3>
+            <p>
+              Designed multi-layer Transformer and xLSTM models for long-sequence industrial data forecasting.
+              Mixed-precision training and multi-GPU parallelization for compute efficiency at scale.
+            </p>
+            <div class="tags">
+              <span class="tag">Transformers</span>
+              <span class="tag">xLSTM</span>
+              <span class="tag">Multi-GPU</span>
+              <span class="tag">PyTorch</span>
+            </div>
+            <div class="links">
+              <a href="#exp-amii">Amii Residency ↗</a>
+            
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-thumb">
+            <video autoplay muted loop playsinline>
+              <source src="assets/project-thumbnails/RL_Controller.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="card-body">
+            <h3>Observer-based RL Control for Rotary in Real-Time</h3>
+            <p>
+              Training an RL agent to control a rotary machine in real-time using a only position data. 
+              Agent is learned to construct other states from the trajectory data collocted from the system offline.
+            </p>
+            <div class="tags">
+              <span class="tag">PyTorch</span>
+              <span class="tag">PPO</span>
+              <span class="tag">Safe RL</span>
+              <span class="tag">POMDPs</span>
+            </div>
+            <div class="links">
+              <a href="https://github.com/AliYavari2000" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-thumb">
+            <img src="assets/project-thumbnails/EPFL.png" alt="EPFL robotic error compensation" />
+          </div>
+          <div class="card-body">
+            <h3>Neural Network Robot Calibration</h3>
+            <p>
+              Real-time error compensation using neural network-based kinematic error modeling
+              for a robot in metrology applications. Integrated system-level and model-level
+              optimization for faster, more stable control.
+            </p>
+            <div class="tags">
+              <span class="tag">TwinCAT</span>
+              <span class="tag">Neural Networks</span>
+              <span class="tag">Robotics</span>
+              <span class="tag">Real-Time</span>
+            </div>
+            <div class="links">
+              <a href="#exp-epfl">EPFL Internship ↗</a>
+         
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-thumb">
+            <img src="assets/project-thumbnails/BallBearing.png" alt="Ball bearing fault detection" />
+          </div>
+          <div class="card-body">
+            <h3>Vibration-Based Fault Detection</h3>
+            <p>
+              Predictive maintenance models using deep learning for vibration-based fault detection
+              and remaining useful life estimation. Improved generalization through data augmentation
+              and precision tuning on hybrid datasets.
+            </p>
+            <div class="tags">
+              <span class="tag">Deep Learning</span>
+              <span class="tag">Predictive Maintenance</span>
+              <span class="tag">Signal Processing</span>
+            </div>
+            <div class="links">
+              <a href="#exp-sharif">Condition Monitoring Lab ↗</a>
+       
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-body">
+            <h3>Generative AI Debugging Assistant</h3>
+            <p>
+              LLM-based debugging assistant using OpenAI API and vector retrieval for semantic
+              fault diagnosis in control systems. Multi-modal context retrieval and response
+              generation for domain-specific reasoning tasks.
+            </p>
+            <div class="tags">
+              <span class="tag">LLM</span>
+              <span class="tag">RAG</span>
+              <span class="tag">OpenAI API</span>
+              <span class="tag">Python</span>
+            </div>
+            <div class="links">
+              <a href="https://github.com/AliYavari2000" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-thumb">
+            <img src="assets/project-thumbnails/pybullet.png" alt="KUKA robot grasping with safe RL" />
+          </div>
+          <div class="card-body">
+            <h3>Safe RL Reward Shaping — KUKA Robot</h3>
+            <p>
+              Applied reward shaping within safe reinforcement learning for a grasping task
+              in the KUKA robotic environment. ARISE 2024 Award Candidate Paper.
+            </p>
+            <div class="tags">
+              <span class="tag">Safe RL</span>
+              <span class="tag">Reward Shaping</span>
+              <span class="tag">KUKA</span>
+              <span class="tag">Robotics</span>
+            </div>
+            <div class="links">
+
+              <a href="https://github.com/AliYavari2000" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications" class="section container">
+      <h2>Publications</h2>
+      <ol class="pub-list">
+        <li>
+          <strong>Yavari, A.</strong>, Najafi, A., Zhao, Q., &amp; Jin, J. (2024).
+          <em>Safe Reinforcement Learning via Reward Shaping: A Case Study on Grasping Task in the KUKA Robotic Environment.</em>
+          Alberta Robotics &amp; Intelligent Systems Expo (ARISE 2024).
+          <span class="pub-note">Award Candidate Paper.</span>
+        </li>
+        <li>
+          <strong>Yavari, A.</strong> &amp; Zhao, Q.
+          <em>Observer-based control in partially observable environments using Lyapunov-constrained reinforcement learning for estimation and control with performance guarantees.</em>
+          <span class="pub-note">Manuscript submitted.</span>
+        </li>
+        <li>
+          Wang, H., Bo, S., Fazeli, S. M., <strong>Yavari, A.</strong>, Liu, B., &amp; Liu, J.
+          <em>Constrained stabilization control via safe reinforcement learning and control Lyapunov value function.</em>
+          <span class="pub-note">Manuscript submitted.</span>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section container">
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Programming</h3>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">C / C++</span>
+            <span class="tag">Bash</span>
+            <span class="tag">SQL</span>
+            <span class="tag">MATLAB</span>
+            <span class="tag">Git</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>ML &amp; RL</h3>
+          <div class="tags">
+            <span class="tag">PyTorch</span>
+            <span class="tag">PyTorch Lightning</span>
+            <span class="tag">HuggingFace</span>
+            <span class="tag">Scikit-learn</span>
+            <span class="tag">BoTorch</span>
+            <span class="tag">Safe RL</span>
+            <span class="tag">Bayesian Optimization</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Infrastructure &amp; MLOps</h3>
+          <div class="tags">
+            <span class="tag">Linux</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Google Cloud</span>
+            <span class="tag">Azure</span>
+            <span class="tag">GitHub Actions</span>
+            <span class="tag">W&amp;B</span>
+            <span class="tag">MLflow</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Systems &amp; Performance</h3>
+          <div class="tags">
+            <span class="tag">Multi-GPU Training</span>
+            <span class="tag">Profiling</span>
+            <span class="tag">Benchmarking</span>
+            <span class="tag">Data Pipeline Optimization</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Generative AI</h3>
+          <div class="tags">
+            <span class="tag">RAG</span>
+            <span class="tag">LLM Agents</span>
+            <span class="tag">Prompt Engineering</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Honors -->
+    <section id="honors" class="section container">
+      <h2>Honors &amp; Awards</h2>
+      <div class="honors-list">
+        <div class="honor-item">
+          <span class="honor-badge">$10,000</span>
+          <div>
+            <strong>LAB2MARKET (L2M) Program Fellow</strong>
+            <p class="muted">Developing the "SafeRL Engine" commercialization initiative.</p>
+          </div>
+        </div>
+        <div class="honor-item">
+          <span class="honor-badge">3%</span>
+          <div>
+            <strong>EPFL E3 Program Fellowship</strong>
+            <p class="muted">Switzerland, 2023 — 3% acceptance rate.</p>
+          </div>
+        </div>
+        <div class="honor-item">
+          <span class="honor-badge">★</span>
+          <div>
+            <strong>Distinguished Student</strong>
+            <p class="muted">Sharif University of Technology, 2022.</p>
+          </div>
+        </div>
+        <div class="honor-item">
+          <span class="honor-badge">0.4%</span>
+          <div>
+            <strong>National University Entrance Exam</strong>
+            <p class="muted">Ranked top 0.4% among 200,000 participants, 2018.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section container">
+      <h2>Get in Touch</h2>
+      <p class="contact-intro">I'm open to research collaborations, ML engineering roles, and interesting projects.</p>
+      <div class="contact-grid">
+        <a class="contact-card" href="mailto:ayavari1@ualberta.ca">
+          <span class="contact-label">Email</span>
+          <span>ayavari1@ualberta.ca</span>
+        </a>
+        <a class="contact-card" href="https://www.linkedin.com/in/ali-yavari79/" target="_blank" rel="noopener">
+          <span class="contact-label">LinkedIn</span>
+          <span>ali-yavari79</span>
+        </a>
+        <a class="contact-card" href="https://github.com/AliYavari2000" target="_blank" rel="noopener">
+          <span class="contact-label">GitHub</span>
+          <span>AliYavari2000</span>
+        </a>
+      </div>
+    </section>
+
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <p>© <span id="year"></span> Your Name. Built with GitHub Pages.</p>
+    <div class="container footer-content">
+      <p>&copy; <span id="year"></span> Ali Yavari. Built with GitHub Pages.</p>
+      <p>Edmonton, Canada</p>
     </div>
   </footer>
 
